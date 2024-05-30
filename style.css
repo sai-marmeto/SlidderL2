@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Poppins', sans-serif; 
     margin: 0;
@@ -9,14 +8,11 @@ body {
     overflow: hidden; 
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    
-  
 }
 
 header img {
@@ -24,19 +20,17 @@ header img {
 }
 
 nav ul {
-	display: flex;
-	font-size: 24px;
-	font-weight: 300;
-	gap: 60px;
-    
-	list-style-type: none;
+    display: flex;
+    font-size: 24px;
+    font-weight: 300;
+    gap: 60px;
+    list-style-type: none;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-  
 }
 
 .cta-button {
@@ -82,11 +76,10 @@ nav a {
 .slide-content .price {
     font-size: 28px;
     font-weight: bold;
-    margin-top: 20px; /* Increase the margin-top to add space */
-    margin-bottom: 10px; /* Optional: add margin-bottom for spacing */
+    margin-top: 20px; 
+    margin-bottom: 10px; 
     color: #fff;
 }
-
 
 .slide-image {
     flex: 1;
@@ -107,30 +100,25 @@ nav a {
     padding: 5px;
     font-size: 20px;
     background-color: white;
-   
-  }
-  
-  .splide__arrow--prev {
+}
+
+.splide__arrow--prev {
     left: auto;
     right: 40%;
     top: 40%;
     z-index: 999;
-   
-  }
-  
-  .splide__arrow--next {
+}
+
+.splide__arrow--next {
     right: 10%;
     top: 40%;
     z-index: 999;
-    
-  }
-  
-
+}
 
 .social-icons {
     display: flex;
-    gap: 10px; 
-    margin-top: 30px;
+    gap: 20px; 
+    margin-top: 40px;
 }
 
 .social-icons a {
@@ -141,8 +129,21 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 22px;
-    border-radius: 20%;
- 
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
     transition: background-color 0.3s ease;
 }
 
+
+.social-icons a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    z-index: -1;
+}
