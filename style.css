@@ -99,24 +99,30 @@ nav a {
 .slide-image img {
     width: 300px;
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
+    margin-bottom: 25%;
 }
 
 .splide__arrow {
-    padding: 15px;
+    padding: 5px;
     font-size: 20px;
     background-color: white;
+   
   }
   
   .splide__arrow--prev {
     left: auto;
     right: 40%;
+    top: 40%;
     z-index: 999;
+   
   }
   
   .splide__arrow--next {
     right: 10%;
+    top: 40%;
     z-index: 999;
+    
   }
   
 
